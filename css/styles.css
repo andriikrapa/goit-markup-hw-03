@@ -88,10 +88,14 @@ footer {
     font-weight: 500;
     font-size: 26px;
     line-height: 1.19;
+    margin-top: auto;
+    margin-bottom: auto;
+    
 }
 
 .logo .web{
     color: var(--accent-color);
+    
 }
 
 .footer.logo.link{
@@ -112,14 +116,38 @@ footer {
     outline: 2px solid tomato;
 }
 
+.main-nav{
+    display: flex;
+    align-items: center;
+}
+
 /* Site nav */
 
+.site-nav{
+    display: flex;
+}
+
+.site-nav ul{
+    margin-left: 85px;
+}
+
+.site-nav li:not(:last-child){
+    margin-right: 50px;
+}
+
+.site-nav li{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .site-nav a{
+    display: block;
+
     color: var(--title-text-color);
 }
 
-.site-nav a:hover,
-.site-nav a:focus{
+.site-nav .list a:hover,
+.site-nav .list a:focus{
     color: var(--accent-color);
 }
 
@@ -128,6 +156,23 @@ footer {
 }
 
 /* Address */
+
+.address.list{
+    display: flex;
+}
+
+.address.list{
+    margin-left: auto;
+}
+
+.address li{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.address li:not(:last-child){
+    margin-right: 50px;
+}
 
 .address a{
     color: var(--primary-text-color);
