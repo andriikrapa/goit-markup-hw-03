@@ -82,20 +82,19 @@ footer {
 
 /* Logo */
 
-.logo{
+.logo.link{
     color: #000000;
     font-family: Raleway;
     font-weight: 500;
     font-size: 26px;
     line-height: 1.19;
-    margin-top: auto;
-    margin-bottom: auto;
+    padding-top: 24px;
+    padding-bottom: 25px;
     
 }
 
 .logo .web{
     color: var(--accent-color);
-    
 }
 
 .footer.logo.link{
@@ -112,8 +111,10 @@ footer {
 .contener{
     margin-left: auto;
     margin-right: auto;
-    width: 1170px;
+    width: 1210px;
     outline: 2px solid tomato;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .main-nav{
@@ -125,6 +126,7 @@ footer {
 
 .site-nav{
     display: flex;
+    align-items: center;
 }
 
 .site-nav ul{
@@ -136,12 +138,13 @@ footer {
 }
 
 .site-nav li{
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
+    display: block;
+} 
 
 .site-nav a{
     display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
     color: var(--title-text-color);
 }
@@ -327,6 +330,7 @@ footer{
     text-align: center;
     border: none;
 }
+
 
 /* Portfolio */
 
