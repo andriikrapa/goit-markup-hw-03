@@ -48,8 +48,10 @@ h2{
 
 h3{
     color: var(--title-text-color);
-    font-weight: 500;
+    font-weight: 700;
     text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.19;
 }
 
 footer {
@@ -112,7 +114,6 @@ footer {
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
-    outline: 2px solid tomato;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -189,10 +190,6 @@ footer {
 
 /* Section */
 
-.section{
-    outline: 2px solid tomato;
-}
-
 /* Section Hero */
 
 .section.hero h1{
@@ -218,40 +215,54 @@ footer {
 
 /* About us */
 
-.section.about-us.image-button{
+.about-us.section{
+    padding-top: 94px;
+    padding-bottom: 47px;
+}
+
+.about-us-items{
+    display: flex;
+    margin: -15px;
+}
+
+.about-us-items li{
     width: 270px;
-    height: 120px;
-    background-color: tomato;
+    margin: 15px;
+}
+
+.about-us.section h3{
     margin-top: 0;
     margin-bottom: 10px;
 }
 
-.section.about-us h3{
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-.section.about-us p{
+.about-us.section p{
     line-height: 1.71;
     margin-top: 0;
     margin-bottom: 0;
 }
 
+/* Section What we do */
 
-
-.section.about-us{
-    padding-top: 94px;
-    padding-bottom: 47px;
+.what-we-do-items{
+    display: flex;
+    margin: -15px;
 }
 
-/* Section What we do */
+.what-we-do-items li{
+    margin: 15px;
+}
 
 .what-we-do h3{
     color: var(--primary-bg-color);
     background-color: rgba(47, 48, 58, 0.8);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
 }
 
-.section.what-we-do{
+.what-we-do.section{
     padding-top: 47px;
     padding-bottom: 94px;
 }
@@ -259,11 +270,7 @@ footer {
 .what-we-do h2{
     margin-top: 0;
     margin-bottom: 50px;
-} 
-
-.what-we-do h3{
-    margin-top: 0;
-    margin-bottom: 0;
+    text-align: center;
 }
 
 /* Section Our team */
@@ -281,6 +288,10 @@ footer {
 
 .our-team-items > li{
     margin: 15px;
+    background-color: var(--primary-bg-color);
+    text-align: center;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 4px 4px;
 }
 
 /* .our-team-items li:not(:last-child){
@@ -324,22 +335,23 @@ footer {
 
 .our-team-cocial-list a{
     display: flex;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
     background-color: #fff;
     justify-content: center;
     align-items: center;
 }
 
 .our-team-cocial-list svg{
-    width: 32px;
-    height: 32px;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 24px;
 }
 
 /* Section Our Clients */
 
-.section.our-clients{
+.our-clients.section{
     padding-top: 94px;
     padding-bottom: 95px;
 }
@@ -347,13 +359,45 @@ footer {
 .our-clients h2{
     margin-top: 0;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 /* Footer */
 
-footer{
-    padding-top: 60px;
-    padding-bottom: 60px;
+.footer.contener{
+    display: flex;
+}
+
+.footer.logo.link{
+    display: block;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+.footer-address{
+    margin-top: 60px;
+    margin-right: 69px;
+    margin-bottom: 60px;
+}
+
+.footer-join-us{
+    margin-top: 72px;
+    margin-right: 94px;
+}
+
+.footer-subscribe-form{
+    margin-top: 72px;
+}
+
+.footer-subscribe-form input{
+    width: 358px;
+    height: 50px;
+    margin-top: 20px;
+    margin-right: 12px;
+    background-color: #2F303A;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.6);;
 }
 
 /* Button */
@@ -376,8 +420,10 @@ footer{
 
 /* Portfolio */
 
-.section.portfolio{
-    padding-top: 174px;
+.portfolio.section{
+    padding-top: 93px;
+    padding-bottom: 74px;
+    border: 1px solid #ECECEC;
 }
 
 /* Button выбора работ портфолио */
